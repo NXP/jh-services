@@ -1,0 +1,12 @@
+NXP Software Content Register
+
+--------------------------------------------
+Package:                     jh-services
+Outgoing License:            GPL-2.0
+License File:                COPYING
+Package Category:            BSP
+Type of Content:             Source code
+Description and comments:    Linux kernel drivers for ivshmem communication
+Release Location:            https://github.com/NXPmicro/jh-services
+Origin                       NXP (GPL-2.0)
+--------------------------------------------
