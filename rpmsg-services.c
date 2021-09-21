@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2020 NXP
+ * Copyright 2018-2022 NXP
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files
@@ -279,11 +279,6 @@ static void ivshm_rpmsg_release_device(struct device *dev)
 {
     struct rpmsg_device *rpdev = to_rpmsg_device(dev);
     struct ivshm_rpmsg_service *service = to_ivshm_rpmsg_service(rpdev);
-
-#ifdef CONFIG_DEBUG_FS
-    debugfs_remove_recursive(service->debug);
-#endif
-
     kfree(service);
 }
 
